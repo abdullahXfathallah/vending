@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFN SHOP</title>
+    <link rel="stylesheet" href="D:\cssTry.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffffff;
+            padding-top: 50px;
+        }
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+            text-transform: uppercase;
+            position: relative; /* Added */
+            animation: move 0.7s infinite alternate; /* Added */
+        }
+        @keyframes move { /* Added */
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        .products-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .product {
+            display: inline-block;
+            margin: 0 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        .product img {
+            width: 200px;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .product .pay {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 0 0 10px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .product .pay:hover {
+            background-color: #45a049;
+        }
+
+        /* CSS code for the payment method box */
+        .container {
+            display: flex;
+            justify-content: center; 
+            align-items: first baseline; 
+            height: 100vh; 
+            background-color: #ffffff; 
+            margin-top: 50px; 
+        }
+
+        .payment-box {
+            background-color: #ffffff; 
+            border-radius: 10px; 
+            padding: 20px; 
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.1); 
+        }
+
+        .payment-method {
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            color: #000b5f; 
+        }
+
+        .paypal-logo {
+            width: 50px; 
+            margin-right: 10px; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MFN SHOP <img src="https://www.mexatk.com/wp-content/uploads/2015/06/%D8%A8%D8%B3%D9%85-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86-%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85-2.gif" alt="MFN Logo" style="width: 165px;"> </h1>
+
+<div class="products-container">
+    <div class="product">
+        <img src="https://th.bing.com/th/id/R.4dd4f4b75a9512b5d248020347440bfa?rik=65O9fdDdr0K2Gw&pid=ImgRaw&r=0" alt="Pepsi">
+        <div class="pay" onclick="openNewPage()"><b>Buy Now </b> (10 L.E) </div>
+    </div>
+
+    <div class="product">
+        <img src="https://th.bing.com/th/id/OIP.gOSWD16OMZ6vAMmKT8ltUwHaHa?rs=1&pid=ImgDetMain" alt="Coca-Cola">
+        <div class="pay" onclick="openNewPage()"><b>Buy Now </b> (12 L.E)</div>
+    </div>
+
+    <div class="product">
+        <img src="https://th.bing.com/th/id/R.12f8afb80f39b26d5f46ab3e81c9e760?rik=iqGXQr%2bmhXRgAg&pid=ImgRaw&r=0" alt="Fayrouz">
+        <div class="pay" onclick="openNewPage()"><b>Buy Now </b>(15 L.E)</div>
+    </div>
+</div>
+
+<script>
+    function openNewPage() {
+        // Open a new window with "You Won Free Can" centered
+        var newWindow = window.open('', 'New Page', 'width=300,height=400');
+        newWindow.document.body.innerHTML = '<div style="display: flex; justify-content: center; align-items: center; height: 100%;"><h1>You Can Buy Now</h1></div>';
+    }
+</script>
+
+<div class="container">
+    <div class="payment-box">
+        <h2>Payment Method</h2>
+        <div class="payment-method">
+            <img class="paypal-logo" src="https://th.bing.com/th/id/OIP.wBKSzdf1HTUgx1Ax_EecKwAAAA?rs=1&pid=ImgDetMain" alt="PayPal Logo">
+            PayPal
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
