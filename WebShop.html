@@ -6,20 +6,23 @@
     <title>SES SHOP</title>
     <link rel="stylesheet" href="D:\cssTry.css">
     <style>
+
+
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #ffffff;
             padding-top: 50px;
+            margin: 0; /* Remove default margin */
         }
         h1 {
             margin-bottom: 30px;
             color: #333;
             text-transform: uppercase;
-            position: relative; /* Added */
-            animation: move 0.7s infinite alternate; /* Added */
+            position: relative;
+            animation: move 0.7s infinite alternate;
         }
-        @keyframes move { /* Added */
+        @keyframes move {
             0% { transform: translateY(0); }
             100% { transform: translateY(-10px); }
         }
@@ -89,70 +92,142 @@
             margin-right: 10px; 
         }
 
+        /* New styles for the top bar */
+        .top-bar {
+            background-color: #333; /* Dark background */
+            color: #fff; /* Light text */
+            padding: 16px 20px; /* Padding inside the bar */
+            display: flex;
+            justify-content: space-between; /* Space between logo and menu */
+            align-items: center; /* Center vertically */
+        }
 
-        body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .center-bottom {
-    text-align: center;
-    margin-bottom: 20px; 
-  }
+        .logo img {
+            width: 100px; /* Adjust as needed */
+            height: auto;
+        }
 
+        .menu {
+            list-style: none; /* Remove bullets */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Arrange items horizontally */
+        }
+
+        .menu li {
+            margin-right: 20px; /* Space between menu items */
+        }
+
+        .menu li:last-child {
+            margin-right: 0; /* No margin for the last item */
+        }
+
+        .menu a {
+            color: #fff; /* White text */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Bold text */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        .menu a:hover {
+            color: #ffcc00; /* Yellow on hover */
+        }
 
 
     </style>
 </head>
 <body>
 
-    <h1>SES SHOP <img src="https://www.mexatk.com/wp-content/uploads/2015/06/%D8%A8%D8%B3%D9%85-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86-%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85-2.gif" alt="MFN Logo" style="width: 165px;"> </h1>
-
-<div class="products-container">
-    <div class="product">
-        <img src="https://th.bing.com/th/id/R.4dd4f4b75a9512b5d248020347440bfa?rik=65O9fdDdr0K2Gw&pid=ImgRaw&r=0" alt="Pepsi">
-        <div class="pay" onclick="openNewPage()"><b>Buy Now </b> (10 L.E) </div>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="logoteam.png" alt="Logo">
+        </div>
+        <!-- Menu -->
+        <ul class="menu">
+            <li><a href="newpage/Feedback.html">Feedback</a></li>
+            <li><a href="newpage/Support.html">Support</a></li>
+            <li><a href="page3.html">Team Work</a></li>
+        </ul>
     </div>
 
-    <div class="product">
-        <img src="https://th.bing.com/th/id/OIP.gOSWD16OMZ6vAMmKT8ltUwHaHa?rs=1&pid=ImgDetMain" alt="Coca-Cola">
-        <div class="pay" onclick="openNewPage()"><b>Buy Now </b> (12 L.E)</div>
-    </div>
 
-    <div class="product">
-        <img src="https://th.bing.com/th/id/R.12f8afb80f39b26d5f46ab3e81c9e760?rik=iqGXQr%2bmhXRgAg&pid=ImgRaw&r=0" alt="Fayrouz">
-        <div class="pay" onclick="openNewPage()"><b>Buy Now </b>(15 L.E)</div>
-    </div>
-</div>
 
-<script>
-    function openNewPage() {
-        // Open a new window with "You Won Free Can" centered
-        var newWindow = window.open('', 'New Page', 'width=300,height=400');
-        newWindow.document.body.innerHTML = '<div style="display: flex; justify-content: center; align-items: center; height: 100%;"><h1>You Can Buy Now</h1></div>';
-    }
-</script>
 
-<div class="container">
-    <div class="payment-box">
-        <h2>Payment Method</h2>
-        <div class="payment-method">
-            <img class="paypal-logo" src="https://th.bing.com/th/id/OIP.wBKSzdf1HTUgx1Ax_EecKwAAAA?rs=1&pid=ImgDetMain" alt="PayPal Logo">
-            PayPal
+
+
+
+
+
+
+
+
+
+
+    <!-- Main Content -->
+    <h1>SES SHOP</h1>
+
+    <div class="products-container">
+        <div class="product">
+            <img src="https://th.bing.com/th/id/R.4dd4f4b75a9512b5d248020347440bfa?rik=65O9fdDdr0K2Gw&pid=ImgRaw&r=0" alt="Pepsi">
+            <div class="pay" onclick="openNewPage()"><b>Buy Now </b> (10 L.E) </div>
+        </div>
+
+        <div class="product">
+            <img src="https://th.bing.com/th/id/OIP.gOSWD16OMZ6vAMmKT8ltUwHaHa?rs=1&pid=ImgDetMain" alt="Coca-Cola">
+            <div class="pay" onclick="openNewPage()"><b>Buy Now </b> (12 L.E) </div>
+        </div>
+
+        <div class="product">
+            <img src="https://th.bing.com/th/id/R.12f8afb80f39b26d5f46ab3e81c9e760?rik=iqGXQr%2bmhXRgAg&pid=ImgRaw&r=0" alt="Fayrouz">
+            <div class="pay" onclick="openNewPage()"><b>Buy Now </b>(15 L.E)</div>
         </div>
     </div>
-</div>
 
-<button class="center-bottom" onclick="openImage()"> Our Banner</button>
 
-<script>
-function openImage() {
-  var imagePath = 'https://media.discordapp.net/attachments/1238978307257798730/1239642070583607368/Black_And_Red_Modern_Car_Detailing_Service_Banner.png?ex=6643aa25&is=664258a5&hm=421591744ac0e99ba3b7bec53bbbf92f65d0c344bb1248371e0a4dd0f2cd3b41&=&format=webp&quality=lossless&width=218&height=437'; 
-  window.open(imagePath, '_blank');
-}
-</script>
+
+
+
+    <script>
+        function openNewPage() {
+            // Open a new window with "You Won Free Can" centered
+            var newWindow = window.open('', 'New Page', 'width=300,height=400');
+            newWindow.document.body.innerHTML = '<div style="display: flex; justify-content: center; align-items: center; height: 100%;"><h1>You Can Buy Now</h1></div>';
+        }
+    </script>
+
+
+
+
+
+    <!-- Payment Method -->
+    <div class="container">
+        <div class="payment-box">
+            <h2>Payment Method</h2>
+            <div class="payment-method">
+                <img class="paypal-logo" src="https://th.bing.com/th/id/OIP.wBKSzdf1HTUgx1Ax_EecKwAAAA?rs=1&pid=ImgDetMain" alt="PayPal Logo">
+                PayPal
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Button to Open Image -->
+    <button class="center-bottom" onclick="openImage()"> Our Banner</button>
+
+    <script>
+    function openImage() {
+      var imagePath = 'banner.png'; 
+      window.open(imagePath, '_blank');
+    }
+    </script>
+
+
+
 
 
 </body>
