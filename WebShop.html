@@ -93,17 +93,23 @@
         }
 
         /* New styles for the top bar */
+        /* New styles for the top bar */
         .top-bar {
+            position: fixed; /* Fixed position */
+            top: 0; /* Top of the page */
+            left: 0; /* Left of the page */
+            width: 100%; /* Full width */
             background-color: #333; /* Dark background */
             color: #fff; /* Light text */
             padding: 16px 20px; /* Padding inside the bar */
             display: flex;
             justify-content: space-between; /* Space between logo and menu */
             align-items: center; /* Center vertically */
+            z-index: 1000; /* Ensure the bar stays on top */
         }
-
+        
         .logo img {
-            width: 100px; /* Adjust as needed */
+            width: 50px; /* Adjust as needed */
             height: auto;
         }
 
@@ -130,7 +136,7 @@
         }
 
         .menu a:hover {
-            color: #ffcc00; /* Yellow on hover */
+            color: #0040ff; /* Yellow on hover */
         }
 
 
@@ -146,9 +152,10 @@
         </div>
         <!-- Menu -->
         <ul class="menu">
-            <li><a href="Feedback.html">Feedback</a></li>
-            <li><a href="Support.html">Support</a></li>
-            <li><a href="page3.html">Team Work</a></li>
+            <li><a href="newpage/Feedback.html">Feedback</a></li>
+            <li><a href="newpage/Support.html">Support</a></li>
+
+
         </ul>
     </div>
 
