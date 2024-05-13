@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MFN SHOP</title>
+    <title>SES SHOP</title>
     <link rel="stylesheet" href="D:\cssTry.css">
     <style>
         body {
@@ -88,11 +88,27 @@
             width: 50px; 
             margin-right: 10px; 
         }
+
+
+        body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .center-bottom {
+    text-align: center;
+    margin-bottom: 20px; 
+  }
+
+
+
     </style>
 </head>
 <body>
 
-    <h1>MFN SHOP <img src="https://www.mexatk.com/wp-content/uploads/2015/06/%D8%A8%D8%B3%D9%85-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86-%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85-2.gif" alt="MFN Logo" style="width: 165px;"> </h1>
+    <h1>SES SHOP <img src="https://www.mexatk.com/wp-content/uploads/2015/06/%D8%A8%D8%B3%D9%85-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86-%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%85-2.gif" alt="MFN Logo" style="width: 165px;"> </h1>
 
 <div class="products-container">
     <div class="product">
@@ -128,6 +144,16 @@
         </div>
     </div>
 </div>
+
+<button class="center-bottom" onclick="openImage()"> Our Banner</button>
+
+<script>
+function openImage() {
+  var imagePath = 'https://media.discordapp.net/attachments/1238978307257798730/1239642070583607368/Black_And_Red_Modern_Car_Detailing_Service_Banner.png?ex=6643aa25&is=664258a5&hm=421591744ac0e99ba3b7bec53bbbf92f65d0c344bb1248371e0a4dd0f2cd3b41&=&format=webp&quality=lossless&width=218&height=437'; 
+  window.open(imagePath, '_blank');
+}
+</script>
+
 
 </body>
 </html>
