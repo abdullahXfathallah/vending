@@ -92,18 +92,22 @@
             margin-right: 10px; 
         }
 
-        /* New styles for the top bar */
+
         .top-bar {
-            background-color: #333; /* Dark background */
-            color: #fff; /* Light text */
-            padding: 16px 20px; /* Padding inside the bar */
-            display: flex;
-            justify-content: space-between; /* Space between logo and menu */
-            align-items: center; /* Center vertically */
-        }
+    position: fixed; /* تثبيت شريط الأدوات في أعلى الصفحة */
+    top: 0; /* يلمس الحافة العلوية للصفحة */
+    width: 100%; /* تمتد عرضياً لتغطية عرض الصفحة بالكامل */
+    background-color: #000000; /* Dark background */
+    color: #fff; /* Light text */
+    padding: 16px 20px; /* Padding inside the bar */
+    display: flex;
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Center vertically */
+}
+
 
         .logo img {
-            width: 50px; /* Adjust as needed */
+            width: 90px; /* Adjust as needed */
             height: auto;
         }
 
@@ -130,8 +134,34 @@
         }
 
         .menu a:hover {
-            color: #ffcc00; /* Yellow on hover */
+            color: #003cc8; /* Yellow on hover */
         }
+
+        .center-bottom {
+    position: fixed; /* تحديد الموقف */
+    bottom: 20px; /* تحديد المسافة من الأسفل */
+    left: 50%; /* تحديد المسافة من اليسار */
+    transform: translateX(-50%); /* لمحاذاة الزر بالتوسط أفقيا */
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.1s ease;
+    z-index: 999; /* لتحديد ترتيب الطبقات وجعل الزر يظهر فوق المحتوى الآخر */
+}
+
+.center-bottom:hover {
+    background-color: #003cc8;
+}
+
+
 
 
     </style>
@@ -146,8 +176,8 @@
     </div>
     <!-- Menu -->
     <ul class="menu">
-        <li><a href="Feedback.html">Feedback</a></li>
-        <li><a href="Support.html">Support</a></li>
+        <li><a href="newpage/Feedback.html"><b><u>Feedback</u></b></a></li>
+        <li><a href="newpage/Support.html"><b><u>Support</u></b></a></li>
     </ul>
 </div>
 
@@ -155,16 +185,6 @@
 <div style="font-size: 36px; font-weight: bold; margin-top: 50px;">
     Smart Electric Soda
 </div>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -209,7 +229,7 @@
     <!-- Payment Method -->
     <div class="container">
         <div class="payment-box">
-            <h2>Payment Method</h2>
+            <h2>Play & Win</h2>
             <div class="payment-method">
                 <img class="paypal-logo" src="https://th.bing.com/th/id/OIP.wBKSzdf1HTUgx1Ax_EecKwAAAA?rs=1&pid=ImgDetMain" alt="PayPal Logo">
                 PayPal
@@ -219,11 +239,9 @@
 
 
 
-
-
     <!-- Button to Open Image -->
-    <button class="center-bottom" onclick="openImage()"> Our Banner</button>
 
+    <button class="center-bottom" onclick="openImage()">Our Banner</button>
     <script>
     function openImage() {
       var imagePath = 'banner.png'; 
