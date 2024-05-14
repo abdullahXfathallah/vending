@@ -112,34 +112,36 @@
         }
 
         .menu {
-            list-style: none; /* Remove bullets */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            display: flex; /* Arrange items horizontally */
-        }
+    list-style: none; /* إزالة النقاط */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0; /* إزالة الحشو الافتراضي */
+    display: flex; /* ترتيب العناصر أفقيًا */
+    margin-left: -10px; /* تحريك النص إلى الشمال بقيمة معينة */
+}
 
-        .menu li {
-            margin-right: 20px; /* Space between menu items */
-        }
+.menu li {
+    margin-right: 20px; /* تباعد بين عناصر القائمة */
+}
 
-        .menu li:last-child {
-            margin-right: 0; /* No margin for the last item */
-        }
+.menu li:last-child {
+    margin-right: 50px; /* لا تباعد للعنصر الأخير */
+}
 
-        .menu a {
-            color: #fff; /* White text */
-            text-decoration: none; /* Remove underline */
-            font-weight: bold; /* Bold text */
-            transition: color 0.3s; /* Smooth color transition */
-        }
+.menu a {
+    color: #fff; /* لون النص */
+    text-decoration: none; /* إزالة التأثيرات الافتراضية */
+    font-weight: bold; /* سمك الخط */
+    transition: color 0.3s; /* تحويل نعومة اللون */
+}
 
-        .menu a:hover {
-            color: #003cc8; /* Yellow on hover */
-        }
+.menu a:hover {
+    color: #003cc8; /* تغيير لون النص عند التحويم */
+}
+
 
         .center-bottom {
     position: absolute; /* تحديد الموقف */
-    top: 730px; /* تحديد المسافة من الأسفل */
+    top: 1350px; /* تحديد المسافة من الأسفل */
     left: 50%; /* تحديد المسافة من اليسار */
     transform: translateX(-50%); /* لمحاذاة الزر بالتوسط أفقيا */
     background-color: #000000;
@@ -231,9 +233,8 @@
         <div class="payment-box">
             <h2>Play & Win</h2>
             <div class="payment-method">
-                <img class="paypal-logo" src="https://th.bing.com/th/id/OIP.wBKSzdf1HTUgx1Ax_EecKwAAAA?rs=1&pid=ImgDetMain" alt="PayPal Logo">
-                PayPal
-            </div>
+                <img class="paypal-logo" src="https://lh3.googleusercontent.com/o_qrozt2roICxFwC5MCYT1s1Hkprh1W6K-TrPuW3uM9fTiHdhUqassvrAfm-zB120A=w1200-h630-p-k-no-nu" alt="PW Logo">
+                Try Now            </div>
         </div>
     </div>
 
