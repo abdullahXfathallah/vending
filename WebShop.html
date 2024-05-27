@@ -1,172 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="cssTry.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SES SHOP</title>
     <link rel="stylesheet" href="D:\cssTry.css">
-    <style>
 
 
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #ffffff;
-            padding-top: 50px;
-            margin: 0; /* Remove default margin */
-        }
-        h1 {
-            margin-bottom: 30px;
-            color: #333;
-            text-transform: uppercase;
-            position: relative;
-            animation: move 0.7s infinite alternate;
-        }
-        @keyframes move {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-10px); }
-        }
-        .products-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
-        .product {
-            display: inline-block;
-            margin: 0 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .product:hover {
-            transform: translateY(-5px);
-        }
-        .product img {
-            width: 200px;
-            height: auto;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-        .product .pay {
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 0 0 10px 10px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .product .pay:hover {
-            background-color: #45a049;
-        }
-
-        /* CSS code for the payment method box */
-        .container {
-            display: flex;
-            justify-content: center; 
-            align-items: first baseline; 
-            height: 100vh; 
-            background-color: #ffffff; 
-            margin-top: 50px; 
-        }
-
-        .payment-box {
-            background-color: #ffffff; 
-            border-radius: 10px; 
-            padding: 20px; 
-            box-shadow: 0 0 10px rgba(255, 0, 0, 0.1); 
-        }
-
-        .payment-method {
-            display: flex;
-            align-items: center; 
-            justify-content: center; 
-            color: #000b5f; 
-        }
-
-        .paypal-logo {
-            width: 50px; 
-            margin-right: 10px; 
-        }
-
-
-        .top-bar {
-    position: fixed; /* تثبيت شريط الأدوات في أعلى الصفحة */
-    top: 0; /* يلمس الحافة العلوية للصفحة */
-    width: 100%; /* تمتد عرضياً لتغطية عرض الصفحة بالكامل */
-    background-color: #000000; /* Dark background */
-    color: #fff; /* Light text */
-    padding: 16px 20px; /* Padding inside the bar */
-    display: flex;
-    justify-content: space-between; /* Space between logo and menu */
-    align-items: center; /* Center vertically */
-}
-
-
-        .logo img {
-            width: 90px; /* Adjust as needed */
-            height: auto;
-        }
-
-        .menu {
-    list-style: none; /* إزالة النقاط */
-    margin: 0; /* إزالة الهوامش الافتراضية */
-    padding: 0; /* إزالة الحشو الافتراضي */
-    display: flex; /* ترتيب العناصر أفقيًا */
-    margin-left: -10px; /* تحريك النص إلى الشمال بقيمة معينة */
-}
-
-.menu li {
-    margin-right: 20px; /* تباعد بين عناصر القائمة */
-}
-
-.menu li:last-child {
-    margin-right: 50px; /* لا تباعد للعنصر الأخير */
-}
-
-.menu a {
-    color: #fff; /* لون النص */
-    text-decoration: none; /* إزالة التأثيرات الافتراضية */
-    font-weight: bold; /* سمك الخط */
-    transition: color 0.3s; /* تحويل نعومة اللون */
-}
-
-.menu a:hover {
-    color: #003cc8; /* تغيير لون النص عند التحويم */
-}
-
-
-        .center-bottom {
-    position: absolute; /* تحديد الموقف */
-    top: 1350px; /* تحديد المسافة من الأسفل */
-    left: 50%; /* تحديد المسافة من اليسار */
-    transform: translateX(-50%); /* لمحاذاة الزر بالتوسط أفقيا */
-    background-color: #000000;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.1s ease;
-    z-index: 999; /* لتحديد ترتيب الطبقات وجعل الزر يظهر فوق المحتوى الآخر */
-}
-
-.center-bottom:hover {
-    background-color: #003cc8;
-}
-
-
-
-
-    </style>
 </head>
 <body>
 
@@ -178,8 +19,8 @@
     </div>
     <!-- Menu -->
     <ul class="menu">
-        <li><a href="Feedback.html"><b><u>Feedback</u></b></a></li>
-        <li><a href="Support.html"><b><u>Support</u></b></a></li>
+        <li><a href="newpage/Feedback.html"><b><u>Feedback</u></b></a></li>
+        <li><a href="newpage/Support.html"><b><u>Support</u></b></a></li>
     </ul>
 </div>
 
@@ -192,24 +33,31 @@
 
 
 
-    <!-- Main Content -->
     <h1>SES SHOP</h1>
 
     <div class="products-container">
+
+
         <div class="product">
             <img src="https://th.bing.com/th/id/R.4dd4f4b75a9512b5d248020347440bfa?rik=65O9fdDdr0K2Gw&pid=ImgRaw&r=0" alt="Pepsi">
+            <p>Pepsi Can: (355 ml) , 150 calories</p>
             <div class="pay" onclick="openNewPage()"><b>Buy Now </b> (10 L.E) </div>
         </div>
 
+
         <div class="product">
+            
             <img src="https://th.bing.com/th/id/OIP.gOSWD16OMZ6vAMmKT8ltUwHaHa?rs=1&pid=ImgDetMain" alt="Coca-Cola">
+            <p>Coca-Cola Can: (355 ml) , 150 calories</p>
             <div class="pay" onclick="openNewPage()"><b>Buy Now </b> (12 L.E) </div>
         </div>
 
         <div class="product">
             <img src="https://th.bing.com/th/id/R.12f8afb80f39b26d5f46ab3e81c9e760?rik=iqGXQr%2bmhXRgAg&pid=ImgRaw&r=0" alt="Fayrouz">
+            <p>Fayrouz Can: (355 ml) , 150 calories</p>
             <div class="pay" onclick="openNewPage()"><b>Buy Now </b>(15 L.E)</div>
         </div>
+
     </div>
 
 
@@ -229,11 +77,11 @@
 
 
     <!-- Payment Method -->
-    <div class="container">
+    <div class="containerPP">
         <div class="payment-box">
-            <h2>Play & Win</h2>
+            <h2>Online Payment</h2>
             <div class="payment-method">
-                <img class="paypal-logo" src="https://lh3.googleusercontent.com/o_qrozt2roICxFwC5MCYT1s1Hkprh1W6K-TrPuW3uM9fTiHdhUqassvrAfm-zB120A=w1200-h630-p-k-no-nu" alt="PW Logo">
+                <img class="paypal-logo" src="https://th.bing.com/th/id/R.fca76a9d27c54d07ba8c567cb3e2fe1d?rik=vJ%2fFvc7xLxNcEg&riu=http%3a%2f%2ftous-logos.com%2fwp-content%2fuploads%2f2017%2f09%2fPaypal-logo.jpg&ehk=Jf3VB7bWFm1sjKT%2bWcnvnB0PvjQJsJRK%2bAhPWwhR0NE%3d&risl=&pid=ImgRaw&r=0" alt="PW Logo">
                 Try Now            </div>
         </div>
     </div>
@@ -245,14 +93,27 @@
     <button class="center-bottom" onclick="openImage()">Our Banner</button>
     <script>
     function openImage() {
-      var imagePath = 'banner.png'; 
-      window.open(imagePath, '_blank');
+        var imagePath = 'banner.png'; 
+        window.open(imagePath, '_blank');
     }
     </script>
 
 
+<button class="center-team" onclick="openImage()">Our Team</button>
+<script>
+function openImage() {
+    var imagePath = 'team1.jpg'; 
+    window.open(imagePath, '_blank');
+}
+</script>
 
 
 
+
+
+<footer>
+    <p>&copy; SES Team </p>
+  </footer>
+  
 </body>
 </html>
